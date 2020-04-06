@@ -17,7 +17,7 @@
 
 
     <title>光风霁月</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -39,7 +39,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.jpg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">光风霁月</span>
                 </a>
@@ -126,7 +126,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.jpg" class="logo-img circle responsive-img">
         
         <div class="logo-name">光风霁月</div>
         <div class="logo-desc">
@@ -326,6 +326,13 @@
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
 
     <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container">
@@ -334,7 +341,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                如果不能按你所想的方式去活，总有一天你会按照你活的方式去想
+                光风霁月
                 
             </div>
 
@@ -344,10 +351,10 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: ['如果不能按你所想的方式去活，总有一天你会按照你活的方式去想',''],
                         startDelay: 300,
                         typeSpeed: 100,
-                        loop: true,
+                        loop: false,
                         backSpeed: 50,
                         showCursor: true
                     });
@@ -373,7 +380,7 @@
 
                 
                     <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
+                        <i class="fab fa-github-alt"></i>下载主题
                     </a>
                 
             </div>
@@ -408,6 +415,33 @@
         </div>
     </div>
 
+    
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/2.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">CBAM-注意力机制</div>
+                            <div class="description center-align">
+                                
+                                    CBAM总览文章中提到的主要的贡献有以下三点：1、提出了一个简单但是有效的注意力模块(CBAM)，这个模块可以被广泛的使用来增强CNN的表达能力。2、通过消融实验验证了注意力模块的有效性。3、验证了在benchmarks上增加这个轻量模块可
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2020/03/31/cbam-zhu-yi-li-ji-zhi/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     
 </div>
 
@@ -483,6 +517,19 @@
         <div class="container ">
             <div class="card">
                 <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            大口喝酒，大口吃肉
+        </div>
+    </div>
+</div>
                     
 
                     
@@ -920,6 +967,11 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
