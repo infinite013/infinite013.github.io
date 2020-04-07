@@ -495,6 +495,7 @@
 <h2 id="模型训练中的损失函数"><a href="#模型训练中的损失函数" class="headerlink" title="模型训练中的损失函数"></a>模型训练中的损失函数</h2><p>在模型训练的过程中，如下图所示，<br>有两个Classification loss和两个Bounding-box regression loss，区别为：<br>Input Image经过CNN特征提取，首先来到Region Proposal网络。由Regio Proposal Network输出的Classification，这并不是判定物体在数据集上对应的类中哪一类，而是输出一个Binary的值p，可以理解为p在0，1之间 ，人工设定一个threshold=0.5。RPN网络做的事情就是，如果一个Region的 p&gt;=0.5，则认为这个Region中可能是80个类别中的某一类，具体是哪一类现在还不清楚。到此为止，Network只需要把这些可能含有物体的区域选取出来就可以了，这些被选取出来的Region又叫做ROI （Region of Interests），即感兴趣的区域。当然了，RPN同时也会在feature map上框定这些ROI感兴趣区域的大致位置，即Bounding-box。<br><img src="https://i.loli.net/2020/03/31/hAXHFNVTDkYv48S.png" alt="损失函数框图"></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><pre class=" language-markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span> [](https://zhuanlan.zhihu.com/p/31426458)
 <span class="token blockquote punctuation">></span> [](https://zhuanlan.zhihu.com/p/69250914)</code></pre>
+<p>这是行内公式 $ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt, $</p>
 
             </div>
             <hr/>
@@ -820,6 +821,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 
     <footer class="page-footer bg-color">
     
@@ -833,7 +841,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.3k</span>&nbsp;字
+                class="white-color">5.8k</span>&nbsp;字
             
             
             
